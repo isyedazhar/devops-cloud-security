@@ -7,9 +7,9 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ELK Setup Digram file may be used to install only certain pieces of it, such as Filebeat.
 
-  - !(Ansible/install-elk.yml)
-  - !(Ansible/filebeat-config.yml)
-  - !(Ansible/metricbest-config.yml)
+  - https://github.com/isyedazhar/devops-cloud-security/blob/main/Ansible/install-elk.yml
+  - https://github.com/isyedazhar/devops-cloud-security/blob/main/Ansible/filebeat-config.yml
+  - https://github.com/isyedazhar/devops-cloud-security/blob/main/Ansible/metricbeat-config.yml
   
 
 This document contains the following details:
