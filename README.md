@@ -3,11 +3,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/isyedazhar/devops-cloud-security/blob/main/Diagram/ELK_Setup_Diagram.png
+![ELK_Setup_Diagram](https://user-images.githubusercontent.com/82065698/114125510-a1c53500-98c4-11eb-85be-318179b39c6c.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ELK Setup Digram file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - !(Ansible/install-elk.yml)
+  - !(Ansible/filebeat-config.yml)
+  - !(Ansible/metricbest-config.yml)
+  
 
 This document contains the following details:
 - Description of the Topologu
@@ -112,5 +115,7 @@ SSH into the control node and follow the steps below:
   - For Metricbeat : The playbook is called metricbeat-config.yml. You copy the file to the "/etc/ansible/" directory.
   - Edit the /etc/ansible/hosts file to add webserver/elkserver ip addresses for Ansible to run the playbook on a specific machine/s.
   - Navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana in order to check that the ELK server is running.
+
+<img width="800" alt="Kibana" src="https://user-images.githubusercontent.com/82065698/114125706-fc5e9100-98c4-11eb-8895-e0ea83d37eb9.png">
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
